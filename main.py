@@ -12,7 +12,7 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 timer = None
-# ---------------------------- TIMER RESET ------------------------------- # 
+# ---------------------------- TIMER RESET ------------------------------- #
 
 def reset():
     global reps, correct_mark_label, timer_label
@@ -20,10 +20,10 @@ def reset():
     canvas.itemconfig(timer_text, text="00:00")
     window.after_cancel(timer)
     reps = 0
-    correct_mark_label.config("")
+    correct_mark_label.configure(text="", font=(FONT_NAME, 14, "bold"), fg=GREEN, bg=YELLOW)
 
 
-# ---------------------------- TIMER MECHANISM ------------------------------- # 
+# ---------------------------- TIMER MECHANISM ------------------------------- #
 def add_vi_mark(append):
     global correct_mark_label
     if append:
@@ -89,7 +89,6 @@ tomato_img = PhotoImage(file="tomato.png")
 canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME,35,"bold"))
 canvas.grid(column=1, row=1)
-
 
 
 start_btn = Button(text="Start", bg=PINK, fg=WHITE, relief='flat', width=10, command=start_timer)
