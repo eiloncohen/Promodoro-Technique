@@ -16,8 +16,15 @@ Homepage screen
 ![](images/homepage.png)
 
 
-Work on the task screen
+Work on the task screen (25 minutes)
+
 
 ![](images/time_to_work.png)
 
 
+
+
+short break screen (5 minutes)
+
+
+![](images/short_break.png)
